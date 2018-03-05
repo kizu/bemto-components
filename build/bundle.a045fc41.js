@@ -125,7 +125,7 @@
         overflow: auto;
       }
 
-      & > div {
+      & > div:not(.ololo) {
         flex-grow: 1;
         flex-basis: 50%;
       }
