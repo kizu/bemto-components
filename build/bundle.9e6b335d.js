@@ -131,7 +131,7 @@
       }
 
       @media (max-width: 800px) {
-        & {
+        &:not(.azaza) {
           flex-direction: column-reverse;
         }
       }
