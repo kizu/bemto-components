@@ -96,15 +96,6 @@
       overflow: hidden;
       resize: horizontal;
 
-      @media (max-width: 800px) {
-        flex-direction: column-reverse;
-      }
-
-      & > div {
-        flex-grow: 1;
-        flex-basis: 50%;
-      }
-
       /* Result */
       & > div:first-child {
         display: flex;
@@ -132,6 +123,17 @@
       & > div:last-child {
         max-height: 50vh;
         overflow: auto;
+      }
+
+      & > div {
+        flex-grow: 1;
+        flex-basis: 50%;
+      }
+
+      @media (max-width: 800px) {
+        & {
+          flex-direction: column-reverse;
+        }
       }
     }
   `}e.exports=r}).call(t,n(12))},function(e,t,n){"use strict";e.exports=function requireInRuntime(e,t){if(!(t in e))throw new Error('require() statements can be added only by editing a Markdown example file: require("'+t+'")');return e[t]}},function(e,t,n){"use strict";e.exports=function evalInContext(e,t,n){return new Function("require","state","setState","__setInitialState",e+n).bind(null,t)}},function(e,t,n){var r=n(69),o="object"==typeof self&&self&&self.Object===Object&&self,i=r||o||Function("return this")();e.exports=i},function(e,t,n){"use strict";e.exports=function whitespace(e){return o.test("number"==typeof e?r(e):e.charAt(0))};var r=String.fromCharCode,o=/\s/},function(e,t){e.exports=function isObject(e){var t=typeof e;return null!=e&&("object"==t||"function"==t)}},function(e,t){var n=Array.isArray;e.exports=n},function(e,t,n){var r;
